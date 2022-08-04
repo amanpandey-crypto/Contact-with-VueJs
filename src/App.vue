@@ -4,6 +4,7 @@
       <h1>My Friends</h1>
     </header>
     <new-friend @add-contact="addContact"></new-friend>
+    <p><strong>Friend List</strong></p>
     <ul>
       <friend-contact
         v-for="friend in friends"
@@ -87,6 +88,17 @@ header {
   width: 90%;
   max-width: 40rem;
 }
+#app p{
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+  margin: 3rem auto;
+  border-radius: 10px;
+  padding: 1rem;
+  background-color: #026c66;
+  color: white;
+  text-align: center;
+  width: 90%;
+  max-width: 40rem;
+}
 #app ul {
   margin: 0;
   padding: 0;
@@ -111,16 +123,16 @@ header {
 #app button {
   font: inherit;
   cursor: pointer;
-  border: 1px solid #ff0077;
-  background-color: #ff0077;
+  border-radius: 10px;
+  background-color: #000000;
   color: white;
   padding: 0.05rem 1rem;
+  margin-right: 1rem;
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.26);
 }
 #app button:hover,
 #app button:active {
   background-color: #ec3169;
-  border-color: #ec3169;
   box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.26);
 }
 #app input {

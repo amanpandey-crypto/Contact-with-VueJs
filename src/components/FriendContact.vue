@@ -1,7 +1,7 @@
 <template>
   <li>
     <h2>{{ name }} {{ isFavorite ? '(Favorite)' : ''}}</h2>
-    <button @click="toggleFavorite">Toggle Favorite</button>
+    <button @click="toggleFavorite">Change Favorite</button>
     <button @click="toggleDetails">{{ detailsAreVisible ? 'Hide' : 'Show' }} Details</button>
     <ul v-if="detailsAreVisible">
       <li>
